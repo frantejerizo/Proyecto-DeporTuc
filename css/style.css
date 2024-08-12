@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 body {
   min-height: 100vh;
@@ -10,21 +10,50 @@ main {
   flex-grow: 1;
 }
 
-.titulo
-{
+.titulo {
   font-family: "Chakra Petch", sans-serif;
 }
 
-#logoHeader
-{
+#logoHeader {
   width: 40px;
   height: 40px;
   border-radius: 7px;
 }
 
-#logoFooter
-{
+#logoFooter {
   width: 100px;
   height: 100px;
   border-radius: 7px;
+}
+
+#divIconosNavbar
+{
+  display: none;
+}
+
+/* MEDIA QUERIE SMALL (Celular) */
+
+@media screen and (max-width: 767px) 
+{
+  #divIconosNavbar
+  {
+    display: inline;
+  }
+  .iconosHamburguesa
+  {
+    display: none;
+  }
+}
+
+/* MEDIA QUERIE MEDIUM (Tablet) */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #divIconosNavbar
+  {
+    display: inline;
+  }
+  .iconosHamburguesa
+  {
+    display: none;
+  }
 }
