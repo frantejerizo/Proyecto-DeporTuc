@@ -31,6 +31,19 @@ main {
   display: none;
 }
 
+/* carousel */
+.ImagenCarousel{
+  object-fit: cover;
+  height: 600px;
+  object-position:10% 57%;
+}
+.carousel-caption {
+  bottom: 20px;
+}
+
+
+
+
 /* MEDIA QUERIE SMALL (Celular) */
 
 @media screen and (max-width: 767px) 
@@ -43,6 +56,9 @@ main {
   {
     display: none;
   }
+  .carousel-caption {
+    font-size: 1rem;
+}
 }
 
 /* MEDIA QUERIE MEDIUM (Tablet) */

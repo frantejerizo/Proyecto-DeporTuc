@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DeporTuc</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta
@@ -35,21 +35,25 @@
           >
           <div class="d-flex gap-3">
             <div id="divIconosNavbar">
-                <a href="./pages/detalleCarrito.html"><i class="link-success bi bi-cart4 fs-3 me-2"></i></a>
-                <a href="#"><i class="link-success bi bi-person fs-3 ms-2"></i></a>
-              </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
+              <a href="./pages/detalleCarrito.html"
+                ><i class="link-success bi bi-cart4 fs-3 me-2"></i
+              ></a>
+              <a href="#"
+                ><i class="link-success bi bi-person fs-3 ms-2"></i
+              ></a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -66,7 +70,11 @@
                 <a class="nav-link" href="./pages/contacto.html">Contacto</a>
               </li>
             </ul>
-            <a href="./pages/detalleCarrito.html"><i class="link-success bi bi-cart4 fs-3 me-2 iconosHamburguesa"></i></a>
+            <a href="./pages/detalleCarrito.html"
+              ><i
+                class="link-success bi bi-cart4 fs-3 me-2 iconosHamburguesa"
+              ></i
+            ></a>
             <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
@@ -76,12 +84,116 @@
               />
               <button class="btn btn-outline-dark" type="submit">Buscar</button>
             </form>
-            <a href="#"><i class="link-success bi bi-person fs-3 ms-2 iconosHamburguesa"></i></a>
+            <a href="#"
+              ><i
+                class="link-success bi bi-person fs-3 ms-2 iconosHamburguesa"
+              ></i
+            ></a>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
+
+    <main>
+      <!-- Slider -->
+      <section id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/CarouselIndex-1.jpg"
+              class="d-block w-100 ImagenCarousel"
+              alt="Imagen de una camiseta"
+            />
+            <div class="carousel-caption bg-dark bg-opacity-50">
+              <p class="fs-4">
+                Diseñada para ofrecerte máxima comodidad y libertad de
+                movimiento.
+              </p>
+              <a href="#" class="btn btn-dark p-2">
+                Ver más <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="./img/CarouselIndex2.jpg"
+              class="d-block w-100 ImagenCarousel"
+              alt="Botines"
+            />
+            <div class="carousel-caption bg-dark bg-opacity-50">
+              <p class="fs-4">
+                Nuestros botines te aseguran  confort durante todo el
+                día con alta durabilidad.
+              </p>
+              <a href="#" class="btn btn-dark p-2">
+                Ver más <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="./img/CarouselIndex-3.jpg"
+              class="d-block w-100 ImagenCarousel"
+              alt="Imagen que muestra un short"
+            />
+            <div class="carousel-caption bg-dark bg-opacity-50">
+              <p class="fs-4">
+                Nuestros shorts te ofrecen el equilibrio perfecto entre estilo y
+                comodidad.
+              </p>
+              <a href="#" class="btn btn-dark p-2">
+                Ver más <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+    </main>
+
     <footer class="bg-primary-subtle py-3">
       <section class="container">
         <div class="row">
