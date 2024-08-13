@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DeporTuc</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta
@@ -93,8 +93,104 @@
         </div>
       </nav>
     </header>
-    
     <main>
+      <!-- Slider Principal -->
+      <section id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/CarouselIndex-1.jpg"
+              class="d-block w-100 ImagenCarousel"
+              alt="Imagen de una camiseta"
+            />
+            <div class="carousel-caption bg-dark bg-opacity-50">
+              <p class="fs-4">
+                Diseñada para ofrecerte máxima comodidad y libertad de
+                movimiento.
+              </p>
+              <a href="#" class="btn btn-dark p-2">
+                Ver más <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="./img/CarouselIndex2.jpg"
+              class="d-block w-100 ImagenCarousel"
+              alt="Botines"
+            />
+            <div class="carousel-caption bg-dark bg-opacity-50">
+              <p class="fs-4">
+                Nuestros botines te aseguran  confort durante todo el
+                día con alta durabilidad.
+              </p>
+              <a href="#" class="btn btn-dark p-2">
+                Ver más <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="./img/CarouselIndex-3.jpg"
+              class="d-block w-100 ImagenCarousel"
+              alt="Imagen que muestra un short"
+            />
+            <div class="carousel-caption bg-dark bg-opacity-50">
+              <p class="fs-4">
+                Nuestros shorts te ofrecen el perfecto equilibrio entre estilo y
+                comodidad.
+              </p>
+              <a href="#" class="btn btn-dark p-2">
+                Ver más <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        
       <!-- Cards de categorias -->
       <section class="container">
         <article class="row">
