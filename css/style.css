@@ -73,6 +73,10 @@ main {
   flex: 1;
 }
 
+#imgError404 {
+  width: 50%;
+}
+
 /* MEDIA QUERIE SMALL (Celular) */
 
 @media screen and (max-width: 767px) {
@@ -92,6 +96,9 @@ main {
     width: 200px;
     height: 150px;
   }
+  #imgError404 {
+    width: 100%;
+  }
 }
 
 /* MEDIA QUERIE MEDIUM (Tablet) */
@@ -109,5 +116,8 @@ main {
   #logoModalLogin {
     width: 300px;
     height: 200px;
+  }
+  #imgError404 {
+    width: 100%;
   }
 }
