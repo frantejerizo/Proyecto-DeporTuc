@@ -30,7 +30,7 @@ main {
   display: none;
 }
 
-#iconoUsuario {
+.iconoUsuario {
   border: none;
   background: none;
   padding: 0;
