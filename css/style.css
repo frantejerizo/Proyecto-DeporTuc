@@ -77,6 +77,10 @@ main {
   width: 10%;
 }
 
+#imgError404 {
+  width: 50%;
+}
+
 /* MEDIA QUERIE SMALL (Celular) */
 
 @media screen and (max-width: 767px) {
@@ -96,9 +100,11 @@ main {
     width: 200px;
     height: 150px;
   }
-
   .ImagenCarrito{
     width: 30%;
+  }
+  #imgError404 {
+    width: 100%;
   }
 }
 
@@ -121,5 +127,8 @@ main {
   .ImagenCarrito{
     width: 10%;
     margin-left: 0px;
+  }
+  #imgError404 {
+    width: 100%;
   }
 }
