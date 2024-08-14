@@ -30,7 +30,7 @@ main {
   display: none;
 }
 
-#iconoUsuario {
+.iconoUsuario {
   border: none;
   background: none;
   padding: 0;
@@ -80,6 +80,10 @@ main {
   border-radius: 20px;
 }
 
+#imgError404 {
+  width: 50%;
+}
+
 /* MEDIA QUERIE SMALL (Celular) */
 
 @media screen and (max-width: 767px) {
@@ -99,10 +103,12 @@ main {
     width: 200px;
     height: 150px;
   }
-
   .ImagenCarrito{
     width: 50%;
     margin-left: 0px;
+  }
+  #imgError404 {
+    width: 100%;
   }
 }
 
@@ -122,5 +128,14 @@ main {
     width: 300px;
     height: 200px;
   }
-  
+
+  .ImagenCarrito {
+  width: 40%;
 }
+.Radio {
+  border-radius: 20px;
+}
+  #imgError404 {
+    width: 100%;
+  }
+
