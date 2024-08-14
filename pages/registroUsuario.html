@@ -25,7 +25,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-primary-subtle">
         <div class="container">
-          <a class="navbar-brand titulo" href="index.html"
+          <a class="navbar-brand titulo" href="../index.html"
             ><img
               id="logoHeader"
               src="../img/logopagina.png"
@@ -38,9 +38,12 @@
               <a href="./detalleCarrito.html"
                 ><i class="link-success bi bi-cart4 fs-3 me-2"></i
               ></a>
-              <a href="#"
-                ><i class="link-success bi bi-person fs-3 ms-2"></i
-              ></a>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalLogin"
+                class="iconoUsuario link-success bi bi-person fs-3 ms-2"
+              ></button>
             </div>
             <button
               class="navbar-toggler"
@@ -57,10 +60,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../index.html"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   >Inicio</a
                 >
               </li>
@@ -87,14 +87,107 @@
               />
               <button class="btn btn-outline-dark" type="submit">Buscar</button>
             </form>
-            <a href="#"
-              ><i
-                class="link-success bi bi-person fs-3 ms-2 iconosHamburguesa"
-              ></i
-            ></a>
+            <!-- Boton modal de Login -->
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalLogin"
+              class="iconoUsuario link-success bi bi-person fs-3 ms-2 iconosHamburguesa"
+            ></button>
           </div>
         </div>
       </nav>
+
+      <!-- Modal de Login -->
+      <section
+        class="modal fade"
+        id="modalLogin"
+        tabindex="-1"
+        aria-labelledby="modalLoginLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 titulo" id="modalLoginLabel">
+                Inicio de Sesion
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div
+                  class="col-6 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="../img/logopagina.png"
+                    alt="logo pagina"
+                    id="logoModalLogin"
+                  />
+                </div>
+                <div class="col-6">
+                  <form>
+                    <div class="mb-3">
+                      <label for="usuario" class="form-label">Usuario: </label>
+                      <input
+                        type="text"
+                        id="usuario"
+                        class="form-control"
+                        required
+                        minlength="5"
+                        maxlength="30"
+                        placeholder="Ingrese su usuario"
+                      />
+                    </div>
+                    <div>
+                      <label for="contraseña" class="form-label"
+                        >Contraseña:
+                      </label>
+                      <input
+                        type="text"
+                        id="contraseña"
+                        class="form-control"
+                        required
+                        minlength="8"
+                        maxlength="64"
+                        placeholder="Ingrese su contraseña"
+                      />
+                    </div>
+                    <button type="submit" class="btn btn-success my-3">
+                      Iniciar Sesion
+                    </button>
+                  </form>
+                  <div class="d-flex flex-column">
+                    <a href="./error404.html" class="text-danger mb-2"
+                      >¿Olvido su contraseña?</a
+                    >
+                    <a href="registroUsuario.html" class="text-danger mb-2"
+                      >Registrar usuario nuevo</a
+                    >
+                  </div>
+                  <a href="./error404.html"
+                    ><img
+                      class="my-2 modalContinuarCon"
+                      src="../img/google.png"
+                      alt="continuar con google"
+                  /></a>
+                  <a href="./error404.html"
+                    ><img
+                      class="my-2 modalContinuarCon"
+                      src="../img/facebook.png"
+                      alt="continuar con facebook"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
 
     <main class="mb-5">
@@ -105,11 +198,12 @@
       <section class="container bg-primary-subtle p-4 mt-5">
         <form class="row g-3">
           <div class="col-md-6">
-            <label for="Nombre" class="form-label">Nombre</label>
+            <label for="Nombre" class="form-label">Nombre:</label>
             <input
               type="text"
               class="form-control"
               id="Nombre"
+              placeholder="Juan Carlos"
               minlength="3"
               maxlength="50"
               required
@@ -117,11 +211,12 @@
           </div>
 
           <div class="col-md-6">
-            <label for="Apellido" class="form-label">Apellido</label>
+            <label for="Apellido" class="form-label">Apellido:</label>
             <input
               type="text"
               class="form-control"
               id="Apellido"
+              placeholder="Caserez"
               minlength="2"
               maxlength="50"
               required
@@ -129,7 +224,7 @@
           </div>
 
           <div class="col-6">
-            <label for="Contraseña" class="form-label">Contraseña</label>
+            <label for="Contraseña" class="form-label">Contraseña:</label>
             <input
               type="number"
               class="form-control"
@@ -142,7 +237,7 @@
           </div>
 
           <div class="col-6">
-            <label for="Repetircontraseña" class="form-label"> contraseña</label>
+            <label for="Repetircontraseña" class="form-label">Repetir contraseña:</label>
             <input
               type="number"
               class="form-control"
@@ -155,7 +250,7 @@
           </div>
 
           <div class="col-12">
-            <label for="Usuario" class="form-label">Nombre de usuario</label>
+            <label for="Usuario" class="form-label">Nombre de usuario:</label>
             <input
               type="text"
               class="form-control"
@@ -168,7 +263,7 @@
           </div>
 
           <div class="col-12">
-            <label for="Mail" class="form-label">Email</label>
+            <label for="Mail" class="form-label">Email:</label>
             <input
               type="email"
               class="form-control"
@@ -181,7 +276,7 @@
           </div>
 
           <div class="col-6">
-            <label for="Telefono" class="form-label">Telefono</label>
+            <label for="Telefono" class="form-label">Telefono:</label>
             <input
               type="number"
               class="form-control"
@@ -194,7 +289,7 @@
           </div>
 
           <div class="col-6">
-            <label for="Domicilio" class="form-label">Domicilio</label>
+            <label for="Domicilio" class="form-label">Domicilio:</label>
             <input
               type="text"
               class="form-control"
@@ -206,11 +301,12 @@
           </div>
 
           <div class="col-md-12">
-            <label for="Direccion" class="form-label">Direccion</label>
+            <label for="Direccion" class="form-label">Direccion:</label>
             <input
               type="text"
               class="form-control"
               id="Direccion"
+              placeholder="Calle sin nombre 294"
               minlength="5"
               maxlength="30"
             />
@@ -223,7 +319,7 @@
       </section>
     </main>
 
-    <footer class="bg-primary-subtle py-3 mt-5">
+    <footer class="bg-primary-subtle py-3">
       <section class="container">
         <div class="row">
           <article
@@ -269,28 +365,28 @@
               <li class="text-center text-lg-start">
                 <a
                   class="link-dark link-underline-opacity-0 link-underline-opacity-100-hover"
-                  href="./pages/error404.html"
+                  href="./error404.html"
                   >Zapatillas</a
                 >
               </li>
               <li class="text-center text-lg-start">
                 <a
                   class="link-dark link-underline-opacity-0 link-underline-opacity-100-hover"
-                  href="./pages/error404.html"
+                  href="./error404.html"
                   >Remeras</a
                 >
               </li>
               <li class="text-center text-lg-start">
                 <a
                   class="link-dark link-underline-opacity-0 link-underline-opacity-100-hover"
-                  href="./pages/error404.html"
+                  href="./error404.html"
                   >Pantalones</a
                 >
               </li>
               <li class="text-center text-lg-start">
                 <a
                   class="link-dark link-underline-opacity-0 link-underline-opacity-100-hover"
-                  href="./pages/error404.html"
+                  href="./error404.html"
                   >Accesorios</a
                 >
               </li>
@@ -304,13 +400,13 @@
             <div
               class="d-flex justify-content-center justify-content-lg-start gap-3"
             >
-              <a href="./pages/error404.html" class="fs-4 link-dark"
+              <a href="./error404.html" class="fs-4 link-dark"
                 ><i class="bi bi-instagram"></i
               ></a>
-              <a href="./pages/error404.html" class="fs-4 link-dark"
+              <a href="./error404.html" class="fs-4 link-dark"
                 ><i class="bi bi-twitter"></i
               ></a>
-              <a href="./pages/error404.html" class="fs-4 link-dark"
+              <a href="./error404.html" class="fs-4 link-dark"
                 ><i class="bi bi-facebook"></i
               ></a>
             </div>
@@ -318,5 +414,10 @@
         </div>
       </section>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
