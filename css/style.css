@@ -73,15 +73,19 @@ main {
   flex: 1;
 }
 
-.ImagenCarrito{
+.ImagenCarrito {
   width: 40%;
 }
-.Radio{
+.Radio {
   border-radius: 20px;
 }
 
 #imgError404 {
   width: 50%;
+}
+
+.TextAreaContacto {
+  resize: none;
 }
 
 /* MEDIA QUERIE SMALL (Celular) */
@@ -103,7 +107,7 @@ main {
     width: 200px;
     height: 150px;
   }
-  .ImagenCarrito{
+  .ImagenCarrito {
     width: 50%;
     margin-left: 0px;
   }
@@ -130,12 +134,12 @@ main {
   }
 
   .ImagenCarrito {
-  width: 40%;
-}
-.Radio {
-  border-radius: 20px;
-}
+    width: 40%;
+  }
+  .Radio {
+    border-radius: 20px;
+  }
   #imgError404 {
     width: 100%;
   }
-
+}
