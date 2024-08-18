@@ -88,6 +88,41 @@ main {
   resize: none;
 }
 
+.section4{
+  height: 450px;
+}
+
+.publicidad2Img{
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(20%);
+}
+
+.botonPlubicidad2{
+  border-radius: 15px;
+  padding: 5px 5px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border: none;
+}
+
+.botonPlubicidad2:hover{
+  background-color: rgb(150, 148, 148);
+  transition: 300ms;
+}
+
+.contenedor2{
+  position: relative;
+}
+
+.elemento1Publicidad2{
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+}
+
 /* MEDIA QUERIE SMALL (Celular) */
 
 @media screen and (max-width: 767px) {
@@ -114,6 +149,9 @@ main {
   #imgError404 {
     width: 100%;
   }
+  .ocultar-en-moviles {
+    display: none !important; 
+}
 }
 
 /* MEDIA QUERIE MEDIUM (Tablet) */
