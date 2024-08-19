@@ -7,3 +7,184 @@ body {
 main {
   flex-grow: 1;
 }
+
+
+.titulo {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+#logoHeader {
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+}
+
+#logoFooter {
+  width: 100px;
+  height: 100px;
+  border-radius: 7px;
+}
+
+#divIconosNavbar {
+  display: none;
+}
+
+.iconoUsuario {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+#logoModalLogin {
+  width: 100%;
+  height: 100%;
+}
+
+/* Carousel Principal */
+.ImagenCarousel {
+  object-fit: cover;
+  height: 600px;
+  object-position: 10% 57%;
+}
+.carousel-caption {
+  bottom: 20px;
+}
+
+/* Grilla de Categorias Index */
+.ImagenCategorias {
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-body {
+  flex: 1;
+}
+
+.ImagenCarrito {
+  width: 40%;
+}
+.Radio {
+  border-radius: 20px;
+}
+
+#imgError404 {
+  width: 50%;
+}
+
+.TextAreaContacto {
+  resize: none;
+}
+
+.section4 {
+  height: 450px;
+}
+
+.publicidad2Img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(20%);
+}
+
+.botonPlubicidad2 {
+  border-radius: 15px;
+  padding: 5px 5px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border: none;
+}
+
+.botonPlubicidad2:hover {
+  background-color: rgb(150, 148, 148);
+  transition: 300ms;
+}
+
+.contenedor2 {
+  position: relative;
+}
+
+.elemento1Publicidad2 {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+}
+
+/* MEDIA QUERIE SMALL (Celular) */
+
+@media screen and (max-width: 767px) {
+  #divIconosNavbar {
+    display: inline;
+  }
+  .iconosHamburguesa {
+    display: none;
+  }
+  .carousel-caption {
+    font-size: 1rem;
+  }
+  .modalContinuarCon {
+    width: 100%;
+  }
+  #logoModalLogin {
+    width: 200px;
+    height: 150px;
+  }
+  .ImagenCarrito {
+    width: 50%;
+    margin-left: 0px;
+  }
+  #imgError404 {
+    width: 100%;
+  }
+  .ocultar-en-moviles {
+    display: none !important;
+  }
+  #logoSobreNosotros
+  {
+    width: 100%;
+  }
+}
+
+/* MEDIA QUERIE MEDIUM (Tablet) */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #divIconosNavbar {
+    display: inline;
+  }
+  .iconosHamburguesa {
+    display: none;
+  }
+  .modalContinuarCon {
+    width: 100%;
+  }
+  #logoModalLogin {
+    width: 300px;
+    height: 200px;
+  }
+
+  .ImagenCarrito {
+    width: 40%;
+  }
+  .Radio {
+    border-radius: 20px;
+  }
+  #imgError404 {
+    width: 100%;
+  }
+  #logoSobreNosotros
+  {
+    width: 100%;
+  }
+}
