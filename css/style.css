@@ -88,6 +88,21 @@ main {
   resize: none;
 }
 
+.contenedorSection{
+  height: 450px;
+  background-color: black;
+}
+  
+.publicidad1Img2{
+  width: 500px;
+  height: 400px;
+  filter: grayscale(20%);
+}
+      
+.bordesImg{
+  border-radius: 20px;
+}
+  
 .section4{
   height: 450px;
 }
@@ -149,9 +164,22 @@ main {
   #imgError404 {
     width: 100%;
   }
+  
+  .container {
+    flex-direction: column; 
+  }
+
+  .text, .image {
+    max-width: 100%; 
+  }
+
+  .contenedorSection{
+      height: 650px;
+  }
+
   .ocultar-en-moviles {
     display: none !important; 
-}
+  }
 }
 
 /* MEDIA QUERIE MEDIUM (Tablet) */
