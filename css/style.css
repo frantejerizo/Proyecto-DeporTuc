@@ -88,17 +88,6 @@ main {
   resize: none;
 }
 
-
-.price {
-  font-size: 1.25rem;
-}
-
-.discounted-price {
-  color: #e74c3c; /* Rojo para resaltar el precio nuevo */
-  font-weight: bold;
-  margin-left: 10px;
-}
-
 .section4 {
   height: 450px;
 }
