@@ -146,6 +146,13 @@ main {
   bottom: 70px;
   left: 20px;
 }
+.encabezado{
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: black;
+  color: white;
+  }
 
 /* MEDIA QUERIE SMALL (Celular) */
 
