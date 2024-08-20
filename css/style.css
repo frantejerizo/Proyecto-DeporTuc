@@ -153,6 +153,117 @@ main {
   background-color: black;
   color: white;
   }
+  .foto-producto{
+    max-width: 100%;
+    margin: 0 50px;
+
+}
+.contenedor-titulo{
+    padding: 30px;
+    text-align: center;
+    background-color: black;
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.img-contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+}
+
+.info-contenedor{
+    flex-direction: column;
+    span{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .btn{
+        padding: 3px 20px;
+        margin: 10px 0;
+    }
+    h2{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    h3{
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+}
+#talles{
+    width: 200px;
+    text-align: center;
+}
+
+.visa-img{
+  width: 80px;
+  margin: 0;
+}
+.mediosPagos{
+  padding: 10px;
+  span{
+    font-size: 20px;
+    color: green;
+  }
+}
+
+.boton-carrito{
+    .btn{
+        padding: 10px 200px;
+    }
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    p{
+        text-align: center;
+        padding: 0 67px;
+        margin: 10px 160px;
+    }
+}
+
+
+#comentario{
+    resize: none;
+    width: 50%;
+    border: solid 1px black;
+    border-radius: 3px;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+.form-comentario{
+    .btn{
+        margin-bottom: 40px;
+        color: white;
+        padding: 10px 30px;
+    }
+}
+
+.comentarios-producto{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.respuesta{
+    color: rgb(123, 117, 117);
+}
+
+
 
 /* MEDIA QUERIE SMALL (Celular) */
 
@@ -200,6 +311,23 @@ main {
   {
     width: 100%;
   }
+  .img-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descripcion{
+    text-align: center;
+    p{
+        margin: 10px 10px;
+    }
+}
 }
 
 /* MEDIA QUERIE MEDIUM (Tablet) */
@@ -232,4 +360,20 @@ main {
   {
     width: 100%;
   }
+  .img-contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.info-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descripcion{
+    text-align: center;
+    p{
+        margin: 10px 10px;
+    }
+}
 }
