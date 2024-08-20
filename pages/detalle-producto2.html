@@ -65,7 +65,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="sobreNosotros.html"
+                <a class="nav-link" href="./sobreNosotros.html"
                   >Sobre Nosotros</a
                 >
               </li>
@@ -163,20 +163,20 @@
                     </button>
                   </form>
                   <div class="d-flex flex-column">
-                    <a href="./error404.html" class="text-danger mb-2"
+                    <a href="error404.html" class="text-danger mb-2"
                       >¿Olvido su contraseña?</a
                     >
-                    <a href="registroUsuario.html" class="text-danger mb-2"
+                    <a href="./registroUsuario.html" class="text-danger mb-2"
                       >Registrar usuario nuevo</a
                     >
                   </div>
-                  <a href="./error404.html"
+                  <a href="error404.html"
                     ><img
                       class="my-2 modalContinuarCon"
                       src="../img/google.png"
                       alt="continuar con google"
                   /></a>
-                  <a href="./error404.html"
+                  <a href="error404.html"
                     ><img
                       class="my-2 modalContinuarCon"
                       src="../img/facebook.png"
@@ -189,92 +189,129 @@
         </div>
       </section>
     </header>
-
     <main>
-      <h1 class="border-bottom border-black text-center p-3 font">
-        ¿Quienes somos?
-      </h1>
-      <section class="container my-3">
-        <div class="d-flex justify-content-center">
-          <img
-            id="logoSobreNosotros"
-            src="../img/logo2.png"
-            alt="logo rollingcodeschool"
-          />
-        </div>
-        <p class="text-center py-3 lead">
-          Somos estudiantes de Rolling School Code, que conformamos un grupo de
-          4 integrantes para poner en practica lo aprendido en clases con Git y
-          GitHub.<br /><strong>DeporTuc</strong> consiste en un ecommerce de
-          venta de ropa deportiva, con un diseño sencillo y accesible para el
-          usuario común, el cual cuenta con una interfaz Responsive tanto para
-          dispositivos grandes como para tablets y celulares.
-        </p>
-        <div class="row row-gap-3">
-          <div class="col-md-6 col-lg-3">
-            <div class="border border-4 rounded-circle mb-3 border-primary">
-              <img
-                class="w-100 h-100 rounded-circle"
-                src="https://ca.slack-edge.com/THQU1MGPN-U070XEBEG04-f13f235efc55-512"
-                alt="Integrante del grupo"
-              />
-            </div>
-            <h5 class="text-center text-primary">Tejerizo Francisco</h5>
-            <p class="lead">
-              Encargado de dirección general del proyecto, realizar navbar, footer, pagina sobreNosotros, modal
-              de Login y pagina de error404.
-            </p>
+      <!-- breadcrumb -->
+      <div aria-label="breadcrumb" class="container mt-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="../index.html">Categorias</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="./detalle-categoria.html">Botines</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Botines Under Armour Magnetico Select 2.0 FG
+          </li>
+        </ol>
+      </div>
+
+      <div class="contenedor-titulo">
+        <h1>Botines Under Armour Magnetico Select 2.0 FG</h1>
+      </div>
+
+      <section class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center">
+            <img
+              src="../img/botines under armoir.png"
+              alt="Botines Under Armour"
+              class="foto-producto"
+            />
           </div>
 
-          <div class="col-md-6 col-lg-3">
-            <div class="border border-4 rounded-circle mb-3 border-danger">
-              <img
-                class="w-100 h-100 rounded-circle"
-                src="https://ca.slack-edge.com/THQU1MGPN-U072TE91Z9P-g149c548c3e7-512"
-                alt="Integrante del grupo"
-              />
-            </div>
-            <h5 class="text-center text-danger">Matias Sanchez</h5>
-            <p class="lead">
-              Encargado de realizar slider y categorias del index, pagina de
-              Contacto, pagina de Registro usuario y carrito de compras.
-            </p>
-          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="info-contenedor">
+              <span>$114.999 </span><br />
+              <button type="button" class="btn btn-success">
+                Nuevo Producto
+              </button>
+              <button type="button" class="btn btn-danger">25% off</button>
+              <h2>Medios de Pago</h2>
+              <div class="mediosPagos">
+                <img src="../img/visa-master.jpg" alt="" class="visa-img" />
+                <img src="../img/naranja-tarjeta.jpg" alt="" class="visa-img" />
+                <p>Hasta 12 cuotas sin interes <span>$12.444,99</span></p>
+              </div>
 
-          <div class="col-md-6 col-lg-3">
-            <div class="border border-4 rounded-circle mb-3 border-success">
-              <img
-                class="w-100 h-100 rounded-circle"
-                src="https://ca.slack-edge.com/THQU1MGPN-U06QYJ3LB5Z-gd480f7b81d4-512"
-                alt="Integrante del grupo"
-              />
+              <h3>SELECCIONE UN TALLE</h3>
+              <form action="talles">
+                <select name="Talles" id="talles">
+                  <option value="">TALLES DISPONIBLES</option>
+                  <option value="">38</option>
+                  <option value="">39</option>
+                  <option value="">40</option>
+                  <option value="">41</option>
+                  <option value="">42</option>
+                  <option value="">43</option>
+                  <option value="">44</option>
+                  <option value="">45</option>
+                  <option value="">46</option>
+                </select>
+              </form>
+              <br />
+              <button type="button" class="btn btn-dark">COMPRAR</button>
             </div>
-            <h5 class="text-center text-success">Santiago Paez</h5>
-            <p class="lead">
-              Encargado de realizar las publicidades en la pagina principal y la
-              grilla con promociones.
-            </p>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="border border-4 rounded-circle mb-3 border-warning">
-              <img
-                class="w-100 h-100 rounded-circle"
-                src="https://ca.slack-edge.com/THQU1MGPN-U06BNCPCSG0-0b7cee8723c4-512"
-                alt="Integrante del grupo"
-              />
-            </div>
-            <h5 class="text-center text-warning">Eliseo Urueña</h5>
-            <p class="lead">
-              Encargado de realizar pagina del detalle de categoria y detalle de
-              productos.
-            </p>
           </div>
         </div>
       </section>
-    </main>
+      <section class="descripcion">
+        <h2>Descripcion del producto</h2>
+        <p>
+            Solía llevar algo de tiempo conseguir que los botines se ajustaran y se sintieran bien. Ya no. El UA Magnetico Premier 2.0 no requiere ningún tipo de adaptación, lo que le brinda un ajuste perfecto desde el primer momento.
+        </p>
+        <h2>Comentarios</h2>
+        <br />
 
-    <footer class="bg-primary-subtle py-3">
+        <form class="d-flex justify-content-center">
+          <textarea
+          class="form-control w-50"
+          id="mensaje"
+          rows="2"
+          placeholder="Ingresa tu mensaje"
+          minlength="5"
+          minlength="200"
+        ></textarea>
+          <button type="submit" class="btn btn-dark">Envia tu comentario</button>
+        </form>
+
+        <div class="comentarios-producto container">
+          <p>
+            Juan P: "Los Under Armour Verdes ofrecen un excelente agarre en el campo.
+            Me siento seguro al hacer scrums."
+          </p>
+          <p class="respuesta">
+            Vendedor: Muchas gracias Juan, me alegra que te gusten
+          </p>
+          <br />
+          <p>
+            Carla M: "¡Muy resistentes! He jugado varios partidos y siguen como
+            nuevos. Totalmente recomendados."
+          </p>
+          <p class="respuesta">
+            Vendedor: Muchas gracias Carla, la calidad de nuestro producto es
+            excelente
+          </p>
+          <br />
+          <p>
+            Sergio L: "La comodidad es increíble, aunque al principio me
+            parecieron un poco pesados, me adapté rápidamente."
+          </p>
+          <p class="respuesta">
+            Vendedor: Muchas Gracias Sergio, el material del producto suele ser
+            mas pesado
+          </p>
+          <br />
+          <p>
+            Alejandro R: "La tracción que ofrecen es insuperable, especialmente
+            en terrenos húmedos. Nunca me resbalo."
+          </p>
+          <p class="respuesta">
+            Vendedor: Muchas Gracias Alejandro, me alegra que te gusten
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-primary-subtle py-3 mt-5">
       <section class="container">
         <div class="row">
           <article
@@ -307,7 +344,7 @@
               <li class="text-center text-lg-start">
                 <a
                   class="link-dark link-underline-opacity-0 link-underline-opacity-100-hover"
-                  href="./detalleCarrito.html"
+                  href="detalleCarrito.html"
                   ><i class="bi bi-cart4"></i> Carrito de compras</a
                 >
               </li>
