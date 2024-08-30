@@ -88,6 +88,8 @@
               <input
                 class="form-control me-2"
                 type="search"
+                minlength="5"
+                maxlength="50"
                 placeholder="Buscar producto"
                 aria-label="Search"
               />
@@ -261,7 +263,7 @@
         </div>
       </section>
       <section class="descripcion">
-        <h2>Descripcion del producto</h2>
+        <h2>Descripcion del producto.</h2>
         <p>
           Los Botines Kakari RS SG 20024 están diseñados para ofrecer el máximo
           rendimiento en el campo de rugby. Con una construcción duradera y
@@ -277,19 +279,20 @@
         <h2>Comentarios</h2>
         <br />
 
-        <form class="d-flex justify-content-center">
-          <textarea
-            class="form-control w-50 resizenone"
-            id="mensaje"
-            rows="2"
-            placeholder="Ingresa tu mensaje"
-            minlength="5"
-            minlength="200"
-          ></textarea>
-          <button type="submit" class="btn btn-dark ms-2">
-            Envia tu comentario
-          </button>
-        </form>
+        <div class="container">
+          <form class="row">
+            <textarea
+              class="form-control resizenone"
+              rows="2"
+              placeholder="Ingresa tu mensaje"
+              minlength="5"
+              maxlength="200"
+            ></textarea>
+            <button type="submit" class="btn btn-dark">
+              Envia tu comentario
+            </button>
+          </form>
+        </div>
 
         <div class="comentarios-producto container">
           <p>

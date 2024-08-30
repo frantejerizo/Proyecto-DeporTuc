@@ -88,6 +88,8 @@
               <input
                 class="form-control me-2"
                 type="search"
+                minlength="5"
+                maxlength="50"
                 placeholder="Buscar producto"
                 aria-label="Search"
               />
@@ -231,11 +233,19 @@
               <button type="button" class="btn btn-success">
                 Nuevo Producto
               </button>
-              <button type="button" class="btn btn-danger">25%  off</button>
+              <button type="button" class="btn btn-danger">25% off</button>
               <h2>Medios de Pago</h2>
               <div class="mediosPagos">
-                <img src="../img/visa-master.jpg" alt="Logo visa" class="visa-img" />
-                <img src="../img/naranja-tarjeta.jpg" alt="Logo Naranja" class="visa-img" />
+                <img
+                  src="../img/visa-master.jpg"
+                  alt="Logo visa"
+                  class="visa-img"
+                />
+                <img
+                  src="../img/naranja-tarjeta.jpg"
+                  alt="Logo Naranja"
+                  class="visa-img"
+                />
                 <p>Hasta 12 cuotas sin interes <span>$12.444,99</span></p>
               </div>
 
@@ -255,7 +265,13 @@
                 </select>
               </form>
               <br />
-              <button type="button" class="btn btn-dark"><a href="./detalleCarrito.html" class=" link-underline link-underline-opacity-0 text-light">COMPRAR</a></button>
+              <button type="button" class="btn btn-dark">
+                <a
+                  href="./detalleCarrito.html"
+                  class="link-underline link-underline-opacity-0 text-light"
+                  >COMPRAR</a
+                >
+              </button>
             </div>
           </div>
         </div>
@@ -271,19 +287,20 @@
         <h2>Comentarios</h2>
         <br />
 
-        <form class="d-flex justify-content-center">
-          <textarea
-            class="form-control w-50 resizenone"
-            id="mensaje"
-            rows="2"
-            placeholder="Ingresa tu mensaje"
-            minlength="5"
-            minlength="200"
-          ></textarea>
-          <button type="submit" class="btn btn-dark ms-2">
-            Envia tu comentario
-          </button>
-        </form>
+        <div class="container">
+          <form class="row">
+            <textarea
+              class="form-control resizenone"
+              rows="2"
+              placeholder="Ingresa tu mensaje"
+              minlength="5"
+              maxlength="200"
+            ></textarea>
+            <button type="submit" class="btn btn-dark">
+              Envia tu comentario
+            </button>
+          </form>
+        </div>
 
         <div class="comentarios-producto container">
           <p>
