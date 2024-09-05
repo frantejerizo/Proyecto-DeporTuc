@@ -236,8 +236,16 @@
               <button type="button" class="btn btn-danger">15% off</button>
               <h2>Medios de Pago</h2>
               <div class="mediosPagos">
-                <img src="../img/visa-master.jpg" alt="Logo visa" class="visa-img" />
-                <img src="../img/naranja-tarjeta.jpg" alt="Logo Naranja" class="visa-img" />
+                <img
+                  src="../img/visa-master.jpg"
+                  alt="Logo visa"
+                  class="visa-img"
+                />
+                <img
+                  src="../img/naranja-tarjeta.jpg"
+                  alt="Logo Naranja"
+                  class="visa-img"
+                />
                 <p>Hasta 9 cuotas sin interes <span>$33.333,17</span></p>
               </div>
 
@@ -257,7 +265,13 @@
                 </select>
               </form>
               <br />
-              <button type="button" class="btn btn-dark"><a href="./detalleCarrito.html" class="link-underline link-underline-opacity-0 text-light">COMPRAR</a> </button>
+              <button type="button" class="btn btn-dark">
+                <a
+                  href="./detalleCarrito.html"
+                  class="link-underline link-underline-opacity-0 text-light"
+                  >COMPRAR</a
+                >
+              </button>
             </div>
           </div>
         </div>
@@ -270,7 +284,7 @@
           ligera, estos botines cuentan con una suela especial de seis tacos
           intercambiables para un agarre superior en terrenos blandos. La parte
           superior está hecha de un material sintético resistente que
-          proporciona un ajuste ceñido y cómodo, mientras que la plantilla
+          proporciona un ajuste ceñido y cómodo ,mientras que la plantilla
           interna está acolchada para mayor confort durante los partidos. El
           diseño aerodinámico y el ajuste seguro hacen que estos botines sean
           ideales para jugadores que buscan velocidad y estabilidad en cada
@@ -279,20 +293,28 @@
         <h2>Comentarios</h2>
         <br />
 
-        <div class="container">
-          <form class="row">
-            <textarea
-              class="form-control resizenone"
-              rows="2"
-              placeholder="Ingresa tu mensaje"
-              minlength="5"
-              maxlength="200"
-            ></textarea>
-            <button type="submit" class="btn btn-dark">
-              Envia tu comentario
-            </button>
+        <article class="container d-flex justify-content-center">
+          <form class="text-center w-75">
+            <div class="d-flex flex-column align-items-center">
+              <div class="mb-3 w-100">
+                <textarea
+                  class="form-control resizenone w-100 text-center fs-5"
+                  rows="2"
+                  placeholder="Ingresa tu mensaje"
+                  required
+                  minlength="5"
+                  maxlength="200"
+                ></textarea>
+              </div>
+
+              <div>
+                <button type="submit" class="btn btn-dark mt-2 mb-4 p-3">
+                  Envia tu comentario
+                </button>
+              </div>
+            </div>
           </form>
-        </div>
+        </article>
 
         <div class="comentarios-producto container">
           <p>
