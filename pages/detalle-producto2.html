@@ -276,7 +276,7 @@
           </div>
         </div>
       </section>
-      <section class="descripcion">
+      <section class="descripcion container">
         <h2>Descripcion del producto</h2>
         <p>
           Solía llevar algo de tiempo conseguir que los botines se ajustaran y
@@ -287,20 +287,28 @@
         <h2>Comentarios</h2>
         <br />
 
-        <div class="container">
-          <form class="row">
-            <textarea
-              class="form-control resizenone"
-              rows="2"
-              placeholder="Ingresa tu mensaje"
-              minlength="5"
-              maxlength="200"
-            ></textarea>
-            <button type="submit" class="btn btn-dark">
-              Envia tu comentario
-            </button>
+        <article class="row justify-content-center">
+          <form class="text-center w-75 mx-auto">
+            <div class="d-flex flex-column align-items-center">
+              <div class="mb-3 w-100">
+                <textarea
+                  class="form-control resizenone w-100 text-center fs-5"
+                  rows="2"
+                  placeholder="Ingresa tu mensaje"
+                  required
+                  minlength="5"
+                  maxlength="200"
+                ></textarea>
+              </div>
+
+              <div>
+                <button type="submit" class="btn btn-dark mt-2 mb-4 p-3">
+                  Envia tu comentario
+                </button>
+              </div>
+            </div>
           </form>
-        </div>
+        </article>
 
         <div class="comentarios-producto container">
           <p>
